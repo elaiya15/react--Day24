@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 function App() {
   const [initial, setinitial] = useState(0);
+  
 
   const Cart1 = (e) => {
     if (e.target.innerText === 'Add to Cart') {
