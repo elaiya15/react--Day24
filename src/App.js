@@ -1,95 +1,89 @@
 import React from 'react';
 import './style.css';
-import { useState } from "react";
-export default function App() {
+import { useState } from 'react';
+
+function App() {
   const [initial, setinitial] = useState(0);
 
   const Cart1 = (e) => {
-    if (e.target.innerText === "Add to Cart") {
+    if (e.target.innerText === 'Add to Cart') {
       setinitial(initial + 1);
-      e.target.innerText = "Remove from cart";
+      e.target.innerText = 'Remove from cart';
     } else {
       setinitial(initial - 1);
-      e.target.innerText = "Add to Cart";
+      e.target.innerText = 'Add to Cart';
     }
 
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
   const Cart2 = (f) => {
-    if (f.target.innerText === "Add to Cart") {
+    if (f.target.innerText === 'Add to Cart') {
       setinitial(initial + 1);
-      f.target.innerText = "Remove from cart";
+      f.target.innerText = 'Remove from cart';
     } else {
       setinitial(initial - 1);
-      f.target.innerText = "Add to Cart";
+      f.target.innerText = 'Add to Cart';
     }
 
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
   const Cart3 = (g) => {
-    if (g.target.innerText === "Add to Cart") {
+    if (g.target.innerText === 'Add to Cart') {
       setinitial(initial + 1);
-      g.target.innerText = "Remove from cart";
+      g.target.innerText = 'Remove from cart';
     } else {
       setinitial(initial - 1);
-      g.target.innerText = "Add to Cart";
+      g.target.innerText = 'Add to Cart';
     }
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
   const Cart4 = (h) => {
-    if (h.target.innerText === "Add to Cart") {
+    if (h.target.innerText === 'Add to Cart') {
       setinitial(initial + 1);
-      h.target.innerText = "Remove from cart";
+      h.target.innerText = 'Remove from cart';
     } else {
       setinitial(initial - 1);
-      h.target.innerText = "Add to Cart";
+      h.target.innerText = 'Add to Cart';
     }
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
   const Cart5 = (i) => {
-    if (i.target.innerText === "Add to Cart") {
+    if (i.target.innerText === 'Add to Cart') {
       setinitial(initial + 1);
-      i.target.innerText = "Remove from cart";
+      i.target.innerText = 'Remove from cart';
     } else {
       setinitial(initial - 1);
-      i.target.innerText = "Add to Cart";
+      i.target.innerText = 'Add to Cart';
     }
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
   const Cart6 = (j) => {
-    if (j.target.innerText === "Add to Cart") {
+    if (j.target.innerText === 'Add to Cart') {
       setinitial(initial + 1);
-      j.target.innerText = "Remove from cart";
+      j.target.innerText = 'Remove from cart';
     } else {
       setinitial(initial - 1);
-      j.target.innerText = "Add to Cart";
+      j.target.innerText = 'Add to Cart';
     }
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
   const Cart7 = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
   const Cart8 = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
 
-
-
-
-
-
-
-  
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container px-4 px-lg-5">
-          <a className="navbar-brand" href="#!">
+          <a className="navbar-brand" href="#!!">
             Start Bootstrap
           </a>
           <button
@@ -119,7 +113,7 @@ export default function App() {
                 <a
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
-                  href="#"
+                  href="#!"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -149,11 +143,10 @@ export default function App() {
               </li>
             </ul>
             <form className="d-flex">
-              <button className="btn btn-outline-dark" type="submit">
-                <i className="bi-cart-fill me-1"></i>
-                Cart
+              <button className="btn btn-outline-dark" type="button">
+                <i class="fa-solid fa-cart-shopping"></i> &nbsp; Cart
                 <span className="badge bg-dark text-white ms-1 rounded-pill">
-                  0
+                  {initial}
                 </span>
               </button>
             </form>
@@ -161,7 +154,6 @@ export default function App() {
         </div>
       </nav>
 
-      {/* hedar */}
       <header className="bg-dark py-5">
         <div className="container px-4 px-lg-5 my-5">
           <div className="text-center text-white">
@@ -178,22 +170,25 @@ export default function App() {
           <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <div className="col mb-5">
               <div className="card h-100">
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                  alt="..."
-                />
+                <img className="card-img-top" src="image 1.jpg" alt="..." />
+
                 <div className="card-body p-4">
                   <div className="text-center">
                     <h5 className="fw-bolder">Fancy Product</h5>
                     $40.00 - $80.00
                   </div>
                 </div>
+
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
-                      View options
-                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark mt-auto"
+                      id="button1"
+                      onClick={() => Cart7()}
+                    >
+                      View Option
+                    </button>
                   </div>
                 </div>
               </div>
@@ -202,36 +197,42 @@ export default function App() {
               <div className="card h-100">
                 <div
                   className="badge bg-dark text-white position-absolute"
-                  
+                  style={{ top: '0.5rem', right: '0.5rem' }}
                 >
                   Sale
                 </div>
-                <img
-                  className="card-img-top"
-                  src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg'
-                  alt="..."
-                />
+
+                <img className="card-img-top" src="image 2.jpg" alt="..." />
+
                 <div className="card-body p-4">
                   <div className="text-center">
-                    <h5 className="fw-bolder">Special Item</h5>
+                    <h5 className="fw-bolder" style={{ marginBottom: '12px' }}>
+                      Special Item
+                    </h5>
                     <div className="d-flex justify-content-center small text-warning mb-2">
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
                     </div>
                     <span className="text-muted text-decoration-line-through">
                       $20.00
-                    </span>{' '}
+                    </span>
                     $18.00
                   </div>
                 </div>
+
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
-                      Add to cart
-                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark mt-auto"
+                      id="button2"
+                      onClick={(e) => Cart1(e)}
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </div>
@@ -240,58 +241,67 @@ export default function App() {
               <div className="card h-100">
                 <div
                   className="badge bg-dark text-white position-absolute"
-                  
+                  style={{ top: '0.5rem', right: '0.5rem' }}
                 >
                   Sale
                 </div>
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                  alt="..."
-                />
+
+                <img className="card-img-top" src="image 3.jpg" alt="..." />
+
                 <div className="card-body p-4">
                   <div className="text-center">
                     <h5 className="fw-bolder">Sale Item</h5>
                     <span className="text-muted text-decoration-line-through">
                       $50.00
-                    </span>{' '}
+                    </span>
                     $25.00
                   </div>
                 </div>
+
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
-                      Add to cart
-                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark mt-auto"
+                      id="button3"
+                      onClick={(f) => Cart2(f)}
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col mb-5">
               <div className="card h-100">
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                  alt="..."
-                />
+                <img className="card-img-top" src="image 4.jpg" alt="..." />
+
                 <div className="card-body p-4">
                   <div className="text-center">
-                    <h5 className="fw-bolder">Popular Item</h5>
+                    <h5 className="fw-bolder" style={{ marginBottom: '12px' }}>
+                      Popular Item
+                    </h5>
                     <div className="d-flex justify-content-center small text-warning mb-2">
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
                     </div>
                     $40.00
                   </div>
                 </div>
+
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
-                      Add to cart
-                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark mt-auto"
+                      id="button4"
+                      onClick={(g) => Cart3(g)}
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </div>
@@ -300,29 +310,33 @@ export default function App() {
               <div className="card h-100">
                 <div
                   className="badge bg-dark text-white position-absolute"
-                  
+                  style={{ top: '0.5rem', right: '0.5rem' }}
                 >
                   Sale
                 </div>
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                  alt="..."
-                />
+
+                <img className="card-img-top" src="image 5.jpg" alt="..." />
+
                 <div className="card-body p-4">
                   <div className="text-center">
                     <h5 className="fw-bolder">Sale Item</h5>
                     <span className="text-muted text-decoration-line-through">
                       $50.00
-                    </span>{' '}
+                    </span>
                     $25.00
                   </div>
                 </div>
+
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
-                      Add to cart
-                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark mt-auto"
+                      id="button5"
+                      onClick={(h) => Cart4(h)}
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </div>
@@ -331,20 +345,28 @@ export default function App() {
               <div className="card h-100">
                 <img
                   className="card-img-top"
-                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
+                  src="image 6.jpg"
                   alt="..."
+                  style={{ height: '220px' }}
                 />
+
                 <div className="card-body p-4">
                   <div className="text-center">
                     <h5 className="fw-bolder">Fancy Product</h5>
                     $120.00 - $280.00
                   </div>
                 </div>
+
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
-                      View options
-                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark mt-auto"
+                      id="button6"
+                      onClick={() => Cart8()}
+                    >
+                      View Option
+                    </button>
                   </div>
                 </div>
               </div>
@@ -353,65 +375,76 @@ export default function App() {
               <div className="card h-100">
                 <div
                   className="badge bg-dark text-white position-absolute"
-               
+                  style={{ top: '0.5rem', right: '0.5rem' }}
                 >
                   Sale
                 </div>
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                  alt="..."
-                />
+
+                <img className="card-img-top" src="image 7.jpg" alt="..." />
+
                 <div className="card-body p-4">
                   <div className="text-center">
-                    <h5 className="fw-bolder">Special Item</h5>
+                    <h5 className="fw-bolder" style={{ marginBottom: '12px' }}>
+                      Special Item
+                    </h5>
                     <div className="d-flex justify-content-center small text-warning mb-2">
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
                     </div>
                     <span className="text-muted text-decoration-line-through">
                       $20.00
-                    </span>{' '}
+                    </span>
                     $18.00
                   </div>
                 </div>
+
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
-                      Add to cart
-                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark mt-auto"
+                      id="button7"
+                      onClick={(i) => Cart5(i)}
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col mb-5">
               <div className="card h-100">
-                <img
-                  className="card-img-top"
-                  src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
-                  alt="..."
-                />
+                <img className="card-img-top" src="image 8.jpg" alt="..." />
+
                 <div className="card-body p-4">
                   <div className="text-center">
-                    <h5 className="fw-bolder">Popular Item</h5>
+                    <h5 className="fw-bolder" style={{ marginBottom: '12px' }}>
+                      Popular Item
+                    </h5>
                     <div className="d-flex justify-content-center small text-warning mb-2">
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
-                      <div className="bi-star-fill"></div>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
                     </div>
                     $40.00
                   </div>
                 </div>
+
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div className="text-center">
-                    <a className="btn btn-outline-dark mt-auto" href="#">
-                      Add to cart
-                    </a>
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark mt-auto"
+                      id="button8"
+                      onClick={(j) => Cart6(j)}
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 </div>
               </div>
@@ -419,6 +452,7 @@ export default function App() {
           </div>
         </div>
       </section>
+
       <footer className="py-5 bg-dark">
         <div className="container">
           <p className="m-0 text-center text-white">
@@ -429,3 +463,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;
